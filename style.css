@@ -1,0 +1,120 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("to do.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form input[type="text"] {
+    flex: 1 1 auto;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+
+.form button {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #101011;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Add styles for the new input fields */
+
+.form input[type="text"] {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .form input[type="text"],
+    .form input[type="date"],
+    .form input[type="text"],
+    .form button {
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.card {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #9575de;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dad6e8;
+}
+
+.card.completed {
+    background-color: #4caf50;
+}
+
+.card.overdue {
+    background-color: #e966a0;
+}
+
+.card.not-completed {
+    background-color: #9575de;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete-button-icon {
+    color: white;
+    font-size: 18px;
+}
+
+.card.warning {
+    background-color: #e966a0;
+}
+
+@media screen and (max-width: 480px) {
+    .form input[type="text"],
+    .form input[type="date"],
+    .form button {
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+    }
+}
